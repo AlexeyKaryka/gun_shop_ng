@@ -1,0 +1,29 @@
+<div class="register-container">
+    <div class="register-outer-container">
+      <div class="register-inner-container">
+        <h2>Type your profile!</h2>
+        <form (ngSubmit)="onSubmitRegister()" #registerForm="ngForm">
+          <div class="form-group">
+            <label  for="login">Login:</label>
+            <input [(ngModel)]="registerModel.login" name="login" class="form-control" id="login" type="text" required>
+          </div>
+          <div class="form-group">
+            <label for="password">Password:</label>
+            <input [(ngModel)]="registerModel.password" name="password" class="form-control" id="password" type="password" required>
+          </div>
+          <div class="form-group">
+            <label for="name">Name:</label>
+            <input [(ngModel)]="registerModel.name" name="name" class="form-control" id="name" type="text" required>
+          </div>
+          <div class="form-group">
+            <label for="address">Address:</label>
+            <input [(ngModel)]="registerModel.address" name="address" class="form-control" id="address" type="text" required>
+          </div>
+          <div [hidden]="!existingLogin" class="alert alert-danger">
+            Such login already exists!
+          </div>
+          <button class="btn btn-success btn-lg" type="submit" [disabled]="!registerForm.form.valid">Register</button>
+        </form>
+      </div>
+    </div>
+  </div>

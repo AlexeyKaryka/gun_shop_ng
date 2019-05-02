@@ -1,0 +1,21 @@
+<div class="login-container">
+  <div class="login-outer-container">
+    <div class="login-inner-container">
+      <h2>Type your credentials!</h2>
+      <form (ngSubmit)="onSubmitLogin()" #loginForm="ngForm">
+        <div class="form-group">
+          <label  for="login">Login:</label>
+          <input [(ngModel)]="loginModel.login" name="login" class="form-control" id="login" type="text" required>
+        </div>
+        <div class="form-group">
+          <label for="password">Password:</label>
+          <input [(ngModel)]="loginModel.password" name="password" class="form-control" id="password" type="password" required>
+        </div>
+        <div [hidden]="!invalidCreds" class="alert alert-danger">
+          Invalid login or password!
+        </div>
+        <button class="btn btn-success btn-lg" type="submit" [disabled]="!loginForm.form.valid">Login</button>
+      </form>
+    </div>
+  </div>
+</div>

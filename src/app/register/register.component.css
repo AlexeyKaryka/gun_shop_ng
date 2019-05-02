@@ -1,0 +1,36 @@
+.register-container{
+  background-color: rgb(235, 198, 198);
+  height: 86%;
+}
+
+.register-outer-container{
+  padding-top: 70px;
+  width: 100%;
+  height: 100%;
+  display: flex; 
+  align-items: flex-start;
+  justify-content: center; 
+  overflow: auto;  
+}
+
+.ng-valid[required], .ng-valid.required  {
+  border-left: 5px solid #42A948;
+}
+
+.ng-invalid:not(form)  {
+  border-left: 5px solid #a94442;
+}
+
+/* .login-inner-container{
+  
+} */
+
+
+input{
+  width: 250px;
+}
+
+h2{
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  color: seagreen;
+}

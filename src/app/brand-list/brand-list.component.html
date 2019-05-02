@@ -1,0 +1,31 @@
+<div>
+  <div class='brandItemListContainer'>
+    <div *ngIf="brandItemList">
+      <div *ngFor="let brand of pagedItems">
+        <app-brand-item [brandItem]="brand"></app-brand-item>
+      </div>
+    </div>
+  </div>
+  <div class="pagerContainer">
+    <ul class="btn-group pagination" role="group" *ngIf="pager.pages && pager.pages.length">
+      <li (click)="setPage(1)" class="btn btn-primary" [ngClass]="{disabled:pager.currentPage === 1}">
+        First
+      </li>
+      <li (click)="setPage(pager.currentPage - 1)" class="btn btn-primary" [ngClass]="{disabled:pager.currentPage === 1}">
+        Previous
+      </li>
+      <li (click)="setPage(page)" *ngFor="let page of pager.pages" class="btn btn-primary" [ngClass]="{active:pager.currentPage === page}">
+        {{page}}
+      </li>
+      <li (click)="setPage(pager.currentPage + 1)" class="btn btn-primary" [ngClass]="{disabled:pager.currentPage === pager.totalPages}">
+        Next
+      </li>
+      <li (click)="setPage(pager.totalPages)" class="btn btn-primary" [ngClass]="{disabled:pager.currentPage === pager.totalPages}">
+        Last
+      </li>
+    </ul>
+  </div>
+  <div *ngIf="!brandItemList">
+    Loading...
+  </div>
+</div>

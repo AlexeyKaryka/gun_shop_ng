@@ -1,0 +1,17 @@
+<div class="orderItemContainer">
+  <a href="/xmls/{{orderItem.user}}_{{orderItem._id}}.xml" download="">Get XML of order</a>
+  <div *ngIf="orderItem.state == 'pending'" class="buttonOrderContainer">
+    <button (click)="makeOrder(orderItem._id)" class="btn btn-success">Make order</button>
+  </div>
+  <div><span>Items:</span></div>
+  <div class="orderItemsContainer">  
+    <div class="orderItemsOneGunContainer" *ngFor="let item of orderItem.items">
+      <div><span>Model:</span> {{item.name}}</div>
+      <div><span>Cost:</span> {{item.cost}}</div>
+      <div><span>Count:</span> {{item.count}}</div>
+    </div>
+  </div>
+  <div><span>Order cost:</span> {{orderItem.orderCost}}</div>
+  <div><span>Address:</span> {{orderItem.address}}</div>
+  <div><span>State:</span> {{orderItem.state}}</div>
+</div>

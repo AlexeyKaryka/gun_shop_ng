@@ -1,0 +1,50 @@
+
+#container{
+  box-sizing: border-box;
+  padding-top: 6px;
+  padding-left: 647px;
+  width: 100%;
+  height: 7%;
+  background-color: silver;
+  border-bottom: 1px solid whitesmoke;
+}
+
+#login-button{
+  width: 6em;
+  height: 2.3em;
+  border-radius: 2px;
+  border: 0px;
+  background-color: azure;
+  cursor: pointer;
+}
+
+#login-button-link{
+  margin-right: 2em;
+}
+
+#register-button{
+  
+  width: 6em;
+  height: 2.3em;
+  border-radius: 2px;
+  border: 0px;
+  background-color: azure;
+  cursor: pointer;
+}
+
+#register-button-link{
+  margin-left: 2em;
+}
+
+.userName{
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  color: rgb(80, 121, 209);
+}
+
+a{
+  text-decoration: none;
+}
+
+.logoutButton{
+  margin-left: 350px;
+}

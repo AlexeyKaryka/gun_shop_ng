@@ -1,0 +1,21 @@
+.brandItemContainer{
+  margin-bottom: 30px;
+  margin-top: 30px;
+  cursor: pointer;
+  position: relative;
+  width: 700px;
+  border: 1px solid darkgrey;
+  border-radius: 3px;
+  padding-top: 11px;
+  padding-left: 15px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  background-color: ghostwhite;
+}
+
+span{
+  color: rosybrown;
+}
+
+a{
+  text-decoration: none;
+}

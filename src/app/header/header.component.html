@@ -1,0 +1,10 @@
+<div id='container'>
+  <div *ngIf="!isLogined">
+    <a routerLink='/login' id='login-button-link'><button id="login-button">Login</button></a> or
+    <a routerLink='/register' id='register-button-link'><button id="register-button">Register</button></a>
+  </div>
+  <div *ngIf="isLogined">
+    You logined as <a routerLink="/orders"><span class="userName">{{userName}}</span></a> (click to view your orders)
+    <button (click)="logout()" class="logoutButton btn btn-info">Logout</button>
+  </div>
+</div>

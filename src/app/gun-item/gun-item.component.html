@@ -1,0 +1,9 @@
+<div class="gunItemContainer">
+  <img src="{{gunItem.image}}">
+  <p><span>Model name:</span> {{gunItem.name}}</p>
+  <p><span>Brand:</span> {{gunItem.brand}}</p>
+  <p><span>Weapon type:</span> {{gunItem.type}}</p>
+  <p><span>Caliber:</span> {{gunItem.caliber}}</p>
+  <p><span>Cost:</span> {{gunItem.cost}}</p>
+  <div class='addToOrders'><button (click)="addItemToOrders(gunItem.name)" class="btn btn-success">Add to cart</button></div>
+</div>

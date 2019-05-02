@@ -1,0 +1,26 @@
+.gunItemContainer{
+  position: relative;
+  width: 600px;
+  border: 1px solid darkgrey;
+  border-radius: 3px;
+  padding-top: 11px;
+  padding-left: 15px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  background-color: ghostwhite;
+  margin-bottom: 30px;
+  margin-top: 30px;
+}
+
+span{
+  color: rosybrown;
+}
+
+.addToOrders{
+  position: relative;
+  top: -205px;
+  right: -460px;
+}
+
+button:hover{
+  background-color: skyblue;
+}

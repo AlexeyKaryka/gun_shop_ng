@@ -1,0 +1,12 @@
+<div>
+  <div class="orderItemListContainer">
+    <div *ngIf="orderItemList">
+      <div *ngFor="let order of orderItemList">
+        <app-order-item [orderItem]="order"></app-order-item>
+      </div>
+    </div>
+  </div>
+  <div *ngIf="!orderItemList">
+    Loading...
+  </div>
+</div>

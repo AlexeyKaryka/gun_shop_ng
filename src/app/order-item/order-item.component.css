@@ -1,0 +1,38 @@
+.orderItemContainer{
+  position: relative;
+  width: 430px;
+  margin-bottom: 30px;
+  margin-top: 30px;
+  border: 1px solid darkgrey;
+  border-radius: 3px;
+  padding-top: 11px;
+  padding-bottom: 11px;
+  padding-left: 15px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  background-color: ghostwhite;
+  line-height: 30px;
+}
+
+/* .orderItemsContainer{
+  padding-left: 2px;
+} */
+
+.orderItemsOneGunContainer{
+  margin-left: 5px;
+  margin-right: 5px;
+  margin-top: 7px;
+  margin-bottom: 7px;
+  border: 1px solid darkgrey;
+  border-radius: 3px;
+}
+
+
+span{
+  color: rosybrown;
+}
+
+.buttonOrderContainer{
+  position: relative;
+  top: -27px;
+  right: -285px;
+}

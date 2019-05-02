@@ -1,0 +1,12 @@
+<div>
+  <div class='typeItemListContainer'>
+    <div *ngIf="typeItemList">
+      <div *ngFor="let type of typeItemList">
+        <app-type-item [typeItem]="type"></app-type-item>
+      </div>
+    </div>
+  </div>
+  <div *ngIf="!typeItemList">
+    Loading...
+  </div>
+</div>
